@@ -1,0 +1,8 @@
+intro.html
+intro.css
+index.html
+index.css
+Solip Kim
+solipkimm@gmail.com
+2020-06-30
+- CPOS Invoice web page draft and design (Responsive design)
