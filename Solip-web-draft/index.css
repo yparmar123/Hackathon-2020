@@ -1,0 +1,270 @@
+/* 
+index.css
+Solip Kim
+solipkimm@gmail.com
+2020-06-30
+- CPOS Invoice web page draft (Responsive design)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+
+html body {
+  margin: 0 auto;
+  height: 100%;
+  max-height: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  background: rgb(0, 76, 154);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 76, 154, 1) 0%,
+    rgba(76, 152, 184, 1) 58%,
+    rgba(143, 166, 171, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex: 1;
+}
+main {
+  flex: 5;
+}
+#logo {
+  text-align: center;
+}
+#logo-img {
+  display: inline-block;
+  margin-top: 20px;
+  height: 60px;
+  width: 100px;
+}
+#logo-name {
+  font-family: 'Muli', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+input[id='menuicon'] {
+  display: none;
+}
+input[id='menuicon'] + label {
+  display: block;
+  width: 30px;
+  height: 25px;
+  position: fixed;
+  top: 40px;
+  transition: all 0.35s;
+  cursor: pointer;
+  right: 25px;
+}
+input[id='menuicon'] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 30px;
+  background: rgb(255, 115, 0);
+  transition: all 0.35s;
+}
+input[id='menuicon'] + label span:nth-child(1) {
+  top: 0;
+}
+input[id='menuicon'] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id='menuicon'] + label span:nth-child(3) {
+  bottom: 0;
+}
+input[id='menuicon']:checked + label {
+  z-index: 2;
+  top: 40px;
+  right: 25px;
+}
+input[id='menuicon']:checked + label span {
+  background: #032a4e;
+}
+input[id='menuicon']:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id='menuicon']:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id='menuicon']:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+div[class='sidebar'] {
+  width: 220px;
+  height: 442px;
+  background: whitesmoke;
+  position: fixed;
+  top: 60px;
+  right: -250px;
+  z-index: 1;
+  transition: all 0.35s;
+  text-align: left;
+}
+
+input[id='menuicon']:checked + label + div {
+  right: 0;
+}
+#sidebar-menu {
+  display: none;
+}
+#sidebar-setting li,
+#sidebar-account li,
+#sidebar-menu li {
+  font-family: 'Muli', sans-serif;
+  color: black;
+  font-size: 15px;
+  padding: 13px 0px 13px 50px;
+}
+#sidebar-setting li:hover,
+#sidebar-account li:hover,
+#sidebar-menu li:hover {
+  font-weight: bold;
+  color: rgb(19, 87, 165);
+}
+.sidebar ul {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(219, 218, 218);
+  border-left: 1px solid rgb(219, 218, 218);
+}
+#main-box {
+  background-color: rgb(255, 255, 255);
+  min-height: 400px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-left: 0;
+  margin-right: 0%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#footer-text {
+  font-family: 'Muli', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 10px;
+  color: white;
+  opacity: 0.7;
+}
+.fixed-footer {
+  display: none;
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 960px) {
+  body {
+    background: white;
+  }
+  #main-box {
+    margin-top: 70px;
+  }
+  footer {
+    display: none;
+  }
+  header {
+    background-color: rgb(12, 70, 158);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    opacity: 1;
+  }
+  #logo {
+    text-align: left;
+  }
+  #logo-img {
+    display: block;
+    margin-top: 8px;
+    margin-left: 15px;
+    height: 45px;
+    width: 75px;
+  }
+  #logo-name {
+    display: none;
+  }
+}
+#sidebar-menu {
+  display: list-item;
+}
+
+input[id='menuicon'] + label {
+  top: 20px;
+}
+input[id='menuicon']:checked + label {
+  top: 20px;
+}
+input[id='menuicon']:checked + label + div {
+  right: 0px;
+}
+
+#main-home {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  input[id='menuicon']:checked + label {
+    right: 30px;
+  }
+  .fixed-footer {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    height: 65px;
+    position: fixed;
+    background-color: white;
+    border-top: solid 1px rgb(225, 225, 225);
+    display: flex;
+  }
+  .fixed-footer nav {
+    display: block;
+    width: 100%;
+  }
+  .fixed-footer-text {
+    font-size: 13px;
+  }
+  .fixed-footer ul li {
+    font-family: 'Muli', sans-serif;
+    display: inline-block;
+    text-align: center;
+    color: rgb(88, 88, 88);
+    font-size: 17px;
+    opacity: 0.8;
+    padding: 7px 30px 5px 30px;
+  }
+}
+@media (max-width: 600px) {
+  .fixed-footer ul li {
+    font-size: 15px;
+    padding: 7px 25px 5px 25px;
+  }
+}
+@media (max-width: 480px) {
+  .fixed-footer-text {
+    font-size: 13px;
+  }
+  .fixed-footer ul li {
+    font-size: 15px;
+    padding: 7px 20px 5px 20px;
+  }
+}
+@media (max-width: 320px) {
+}
