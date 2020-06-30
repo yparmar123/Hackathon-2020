@@ -61,6 +61,7 @@ app.get("/setting", (req, res) => {
     mainid: "main-box"
   });
 });
-app.listen(3000, () => {
-  console.log("Webserver connectedWeb server is up and running");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log("Web server is up and running");
 });
