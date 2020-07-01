@@ -10,65 +10,13 @@ app.set("view engine", "handlebars");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.get("/", (req, res) => {
+const generalController = require("./controllers/general");
+const accountController = require("./controllers/account")
+const accountingController = require("./controllers/accounting");
 
-  res.render("home", {
-    mainid: "main-box"
-  });
-});
-
-app.get("/signup", (req, res) => {
-  res.render("signup", {
-    mainid: "login"
-  });
-});
-
-app.get("/login", (req, res) => {
-  res.render("login", {
-    mainid: "login"
-  });
-});
-app.get("/contactus", (req, res) => {
-  res.render("contactus", {
-    mainid: "login"
-  });
-});
-app.post("/contactus", (req, res) => {
-  res.render("contactus", {
-    mainid: "login"
-  });
-});
-app.get("/estimates", (req, res) => {
-  res.render("estimates", {
-    mainid: "main-box"
-  });
-});
-app.get("/expenses", (req, res) => {
-  res.render("expenses", {
-    mainid: "main-box"
-  });
-});
-app.get("/feedback", (req, res) => {
-  res.render("feedback", {
-    mainid: "login"
-  });
-});
-app.get("/invoices", (req, res) => {
-  res.render("invoices", {
-    mainid: "main-box"
-  });
-});
-app.get("/payment", (req, res) => {
-  res.render("payment", {
-    mainid: "main-box"
-  });
-});
-
-app.get("/setting", (req, res) => {
-  res.render("setting", {
-    mainid: "main-box"
-  });
-});
+app.use("/", generalController);
+app.use("/account", accountController);
+app.use("/accounting", accountingController);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
