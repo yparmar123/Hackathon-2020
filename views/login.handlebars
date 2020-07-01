@@ -1,43 +1,25 @@
-<!-- Assignment #1 Ye Jin Kim 163291180 -->
-<div style="padding-top: 30px;
-padding-bottom: 50px; background-color:#e7dfd5;">
-    <div class="container">
-        <h1>Login</h1>
-        <div class="grid3">
-            <figure>
-                <div class="fright" style="text-align:center; padding-top:0">
-                    <div class="row" style="text-align: center;">
-                        <a style="text-decoration: none;" href="https://www.facebook.com/">
-                            <img class="icon" src="/img/facebook.png" alt="facebook">
-                            <div class="button2">Login with facebook</div>
-                        </a></div>
-                    <div class="row" style="text-align: center;">
-                        <a style="text-decoration: none;" href="https://www.instagram.com/">
-                            <img class="icon" src="/img/instagram.png" alt="instagram">
-                            <div class="button2">Login with instagram</div>
-                        </a></div>
+<div class="container text-center">
+    <h1>Login</h1>
+    <div class="grid3">
+        <figure>
+            <form method="POST">
+                <div class="row text-center">
+                    <label for="username">
+                        <span class="text-danger">*</span> Username</label>
+                    <input id="username" placeholder="Enter Username" class="form-control" name="username" type="text"
+                        tabindex="1" required>
                 </div>
-            </figure>
-            <figure>
-                <form method="">
-                    <div class="row">
-                        <label for="username">
-                            <span class="text-danger">*</span> Username</label>
-                        <input id="username" placeholder="Enter Username" class="form-control" name="username"
-                            type="text" tabindex="2" required>
-                    </div>
-                    <div class="row">
-                        <label for="Password">
-                            <span class="text-danger">*</span> Password</label>
-                        <input id="password" placeholder="**************" class="form-control" name="Password"
-                            type="password" tabindex="3" size=32 required>
-                    </div>
-                    <div class="row" style="text-align: center;">
-                        <a style="text-decoration: none;" href="">
-                            <div class="button2">Login</div>
-                        </a></div>
-                </form>
-            </figure>
-        </div>
+                <div class="row">
+                    <label for="Password">
+                        <span class="text-danger">*</span> Password</label>
+                    <input id="password" placeholder="**************" class="form-control" name="Password"
+                        type="password" tabindex="2" size=32 required>
+                </div>
+                <div class="row" style="text-align: center;">
+                    <a style="text-decoration: none;" href="">
+                        <div class="button2 btn btn-outline-primary">Login</div>
+                    </a></div>
+            </form>
+        </figure>
     </div>
 </div>

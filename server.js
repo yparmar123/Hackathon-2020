@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 
 app.get("/signup", (req, res) => {
   res.render("signup", {
-    mainid: "Sign up"
+    mainid: "login"
   });
 });
 
@@ -30,12 +30,12 @@ app.get("/login", (req, res) => {
 });
 app.get("/contactus", (req, res) => {
   res.render("contactus", {
-    mainid: "main-box"
+    mainid: "login"
   });
 });
 app.post("/contactus", (req, res) => {
   res.render("contactus", {
-    mainid: "main-box"
+    mainid: "login"
   });
 });
 app.get("/estimates", (req, res) => {
@@ -50,7 +50,7 @@ app.get("/expenses", (req, res) => {
 });
 app.get("/feedback", (req, res) => {
   res.render("feedback", {
-    mainid: "main-box"
+    mainid: "login"
   });
 });
 app.get("/invoices", (req, res) => {
