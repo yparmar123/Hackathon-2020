@@ -21,6 +21,9 @@ ul li {
   margin: 0;
   padding: 0;
 }
+li a{
+    color: gray;
+}
 body {
   text-align: center;
 
@@ -37,21 +40,14 @@ main {
 }
 #logo {
   text-align: center;
-  padding: 1%;
-}
-#logo-img {
-  display: inline-block;
-  margin-top: 30px;
-  height: 60px;
-  width: 100px;
-  opacity: 0.9;
+  padding: 40px;
 }
 #logo-name {
   font-family: "Muli", sans-serif;
   color: white;
   font-size: 30px;
   margin-top: 20px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 #login {
   min-height: 300px;
@@ -177,6 +173,44 @@ footer {
 .fixed-footer {
   display: none;
 }
+/*payment page*/
+
+#main-box h2{
+  font-family: "Muli", sans-serif;
+  font-size: 24px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+#main-box h6{
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+  color: rgb(78, 78, 78);
+}
+#payment{
+  font-family: "Muli", sans-serif;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+#payment tr, #payment td {
+  min-width: 110px;
+  height: 50px;
+  font-size: 15px;
+}
+#payment thead{
+  background-color: #f2f2f2;
+}
+#payment tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#payment a{
+  color: black;
+}
+
+
 @media (max-width: 1280px) {
 }
 @media (max-width: 1024px) {
@@ -193,7 +227,7 @@ footer {
   }
   header {
     background-color: rgb(12, 70, 158);
-    height: 60px;
+    height: 70px;
     position: fixed;
     width: 100%;
     opacity: 1;
@@ -278,20 +312,27 @@ input[id="menuicon"]:checked + label + div {
     font-size: 15px;
     padding: 7px 25px 5px 25px;
   }
+  #payment tr, #payment td {
+    min-width: 80px;
+  }
 }
 @media (max-width: 480px) {
+  
   .fixed-footer-text {
     font-size: 13px;
   }
   .fixed-footer ul li {
     font-size: 15px;
-    padding: 7px 20px 5px 20px;
+    padding: 7px 15px 5px 15px;
   }
 }
 
 @media (max-width: 320px) {
+  .fixed-footer ul li {
+    font-size: 15px;
+    padding: 7px 8px 5px 8px;
+  }
 }
-
 
 /*invoice page*/
 .row {
@@ -324,10 +365,13 @@ input[id="menuicon"]:checked + label + div {
 }
 
 .container {
+  font-family: "Muli", sans-serif;
   background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
+  margin-top: 80px;
+  padding: 30px;
   border: 1px solid lightgrey;
   border-radius: 3px;
+  
 }
 
 input[type="text"] {
@@ -381,37 +425,3 @@ span.price {
 }
 
 
-/*payment page*/
-
-#main-box h2{
-  font-family: "Muli", sans-serif;
-  font-size: 24px;
-  margin-top: 30px
-}
-#main-box h6{
-  font-family: "Muli", sans-serif;
-  font-size: 14px;
-  margin: 0;
-  font-weight: lighter;
-}
-#payment{
-  font-family: "Muli", sans-serif;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 35px;
-}
-#payment tr, #payment td {
-  min-width: 110px;
-  height: 50px;
-  font-size: 15px;
-}
-#payment thead{
-  background-color: #f2f2f2;
-}
-#payment tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-#payment a{
-  color: black;
-}
