@@ -187,7 +187,6 @@ footer {
 #payment-box{
   background-color: white;
   margin: 0 auto;
-  max-width: 800px;
   padding: 30px;
 }
 #main-box h2{
@@ -324,8 +323,12 @@ input[id="menuicon"]:checked + label + div {
     padding: 5px 20px 5px 20px;
   }
   #payment tr, #payment td {
-    min-width: 90px;
-    font-size: 13px;
+    min-width: 80px;
+    font-size: 12px;
+  }
+  #payment-box{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media (max-width: 480px) {
