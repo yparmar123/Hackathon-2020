@@ -164,9 +164,9 @@ footer {
 }
 #footer-text {
   font-family: "Muli", sans-serif;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 10px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  font-size: 8px;
   color: white;
   opacity: 0.7;
 }
@@ -280,7 +280,7 @@ input[id="menuicon"]:checked + label + div {
     width: 100%;
     bottom: 0;
     text-align: center;
-    height: 65px;
+    height: 55px;
     position: fixed;
     background-color: white;
     border-top: solid 1px rgb(225, 225, 225);
@@ -291,7 +291,7 @@ input[id="menuicon"]:checked + label + div {
     width: 100%;
   }
   .fixed-footer-text {
-    font-size: 13px;
+    font-size: 10px;
   }
   .fixed-footer ul li {
     font-family: "Muli", sans-serif;
@@ -300,7 +300,7 @@ input[id="menuicon"]:checked + label + div {
     color: rgb(88, 88, 88);
     font-size: 17px;
     opacity: 0.8;
-    padding: 7px 30px 5px 30px;
+    padding: 5px 10px 5px 5px;
   }
 }
 @media (max-width: 600px) {
@@ -310,7 +310,7 @@ input[id="menuicon"]:checked + label + div {
   }
   .fixed-footer ul li {
     font-size: 15px;
-    padding: 7px 25px 5px 25px;
+    padding: 5px 10px 5px 5px;
   }
   #payment tr, #payment td {
     min-width: 80px;
@@ -323,14 +323,14 @@ input[id="menuicon"]:checked + label + div {
   }
   .fixed-footer ul li {
     font-size: 15px;
-    padding: 7px 15px 5px 15px;
+    padding: 5px 10px 5px 9px;
   }
 }
 
 @media (max-width: 320px) {
   .fixed-footer ul li {
     font-size: 15px;
-    padding: 7px 8px 5px 8px;
+    padding: 7px 10px 5px 8px;
   }
 }
 
