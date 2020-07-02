@@ -8,6 +8,12 @@ const user = {
     address: "123 Cherry Street",
     country: "Canada",
     balance: "689.50",
+    payment: 
+        {
+            method: "Visa",
+            cardHolderName: "Saeed Salar",
+            cardNo: 3456,
+        },
     receipts: [
     {
         receiptID: "456123",
@@ -20,14 +26,6 @@ const user = {
             address: "11 fake street",
             businessEmail: "someone@gmail.com"
         },       
-        payment: 
-        {
-            method: "Visa",
-            cardHolderName: "Saeed Salar",
-            cardNo: 1234567890123456,
-            expirationDate: 02/24,
-            ccv: "123"
-        },
         products: [
             {
                 name: "tomato",
