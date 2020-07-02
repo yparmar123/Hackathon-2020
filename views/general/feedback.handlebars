@@ -1,135 +1,68 @@
- <form id="conhtml" method="POST" name="message" action="https://httpbin.org/post">
-        <div class="row">
-          <div class="form-group col-md-5">
-            <label for="firstname"> <span class="text-danger">*</span>First Name </label>
-            <input
-              id="firstname"
-              placeholder="First Name"
-              class="form-control "
-              name="First name"
-              type="text"
-              tabindex="1"
-              required
-            />
-          </div>
-          <div class="form-group col-md-5">
-            <label for="lastname"> <span class="text-danger">*</span>Last Name </label>
-            <input
-              id="lastname"
-              placeholder="Last Name"
-              class="form-control col"
-              name="Last name"
-              type="text"
-              tabindex="2"
-              required
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-10">
-            <label for="email"> <span class="text-danger">*</span> Email Address</label>
-            <input
-              id="email"
-              placeholder="id@example.com"
-              class="form-control"
-              name="email"
-              autocomplete="email"
-              type="email"
-              tabindex="3"
-              required
-            />
-          </div>
-        </div>
-       
-        
-        <div class="row">
-          <div class="form-group col-md-5">
-            <label for="phonenumber"> Phone Number </label>
-            <input
-              id="phonenumber"
-              placeholder="123-456-7890"
-              class="form-control"
-              name="phonenumber"
-              autocomplete="tel"
-              type="tel"
-              tabindex="4"
-              pattern="^\(?([0-9]{3})\)?[- ]?([0-9]{3})[ -]?([0-9]{4})$"
-              
-            />
-          </div>
+<div class="container">
+  <h1 class="text-center">Feedback</h1>
+  <form id="conhtml" method="POST" name="message" action="https://httpbin.org/post">
+    <div class="row">
+      <div class="col">
+        <label for="firstName"> <span class="text-danger">*</span>First Name </label>
+        <input id="firstName" placeholder="John" class="form-control" type="text" tabindex="1" required />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" placeholder="Smith" class="form-control" type="text" tabindex="2">
+      </div>
+    </div>
 
-        </div>
-        <div class="row">
-          <div class="form-group col-md-5">
-            <label for="yes"> Would you like to be phoned? </label><br />
-            <input
-              id="yes"
-              class="form-check-input"
-              name="phone"
-              type="checkbox"
-              tabindex="5"
-              value="yes"
-            />
-          </div>
+    <div class="row">
+      <div class="col">
+        <label for="email"> <span class="text-danger">*</span>Email</label>
+        <input id="email" placeholder="john@example.com" class="form-control" type="text" tabindex="3" required>
+      </div>
+    </div>
 
-          <div class="form-group col-md-5">
-            <label> What is this about?</label>
-            <br />
 
-            <input
-              id="Question"
-              class="form-check-input"
-              name="about"
-              tabindex="6"
-              value="Question"
-              type="radio"
-              onclick="return document.querySelector('#hidden').style.display='none';"
-            />
-            <label class="form-check-label" for="Question">Question</label><br />
+    <div class="row">
+      <div class="col">
+        <label for="phonenumber"> Phone Number </label>
+        <input id="phonenumber" placeholder="123-456-7890" class="form-control" name="phonenumber" autocomplete="tel"
+          type="tel" tabindex="4" pattern="^\(?([0-9]{3})\)?[- ]?([0-9]{3})[ -]?([0-9]{4})$" />
+      </div>
 
-            <input
-              id="Comment"
-              class="form-check-input"
-              name="about"
-              tabindex="7"
-              value="Comment"
-              type="radio"
-              onclick="return document.querySelector('#hidden').style.display='none';"
-            />
-            <label class="form-check-label" for="Comment">Comment</label><br />
-            <input
-              id="OrderProblem"
-              class="form-check-input"
-              name="about"
-              tabindex="8"
-              value="Order Problem"
-              type="radio"
-              onclick="return document.querySelector('#hidden').style.display='block';"
-            />
-            <label class="form-check-label" for="OrderProblem">Problem</label><br />
+    </div><br>
+    <div class="row">
+      <div class="col-50">
+        <label for="yes"> Would you like to be phoned? </label></div>
+      <div class="col-50">
+        <input id="yes" class="form-check-input" name="phone" type="radio" tabindex="5" value="yes" />
+      </div>
 
-          </div>
-        </div>
-        <div class="row ">
-          <div class="form-group col-md-10">
-            <label for="message">Message</label>
-            <textarea
-              rows="3"
-              tabindex="9"
-              name="message"
-              id="message"
-              class="form-control"
-            ></textarea>
-          </div>
-        </div>
-        <input type="hidden" id="studentname" name="studentname" value="Ye Jin Kim" />
+    </div><br>
+    <div class="row">
+      <div class="col">
+        <label> What is this about?</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 text-center">
+        <input id="Question" class="form-check-input" name="about" tabindex="6" value="Question" type="radio" />
+        <label class="form-check-label" for="Question">Question</label></div>
+      <div class="col-4 text-center">
+        <input id="Comment" class="form-check-input" name="about" tabindex="7" value="Comment" type="radio" />
+        <label class="form-check-label" for="Comment">Comment</label></div>
+      <div class="col-4 text-center">
+        <input id="OrderProblem" class="form-check-input" name="about" tabindex="8" value="Order Problem"
+          type="radio" />
+        <label class="form-check-label" for="OrderProblem">Problem</label></div>
 
-        <input
-          class="btn btn-outline-primary"
-          type="submit"
-          name="submitbtn"
-          value="submit"
-          tabindex="10"
-          style="margin-left: 70%;"
-        />
-      </form>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <label for="message">Message</label>
+        <input id="message" class="form-control" type="text" tabindex="9">
+      </div>
+    </div>
+    <input class="btn btn-outline-primary" type="Submit" name="Submitbtn" value="Submit" tabindex="10" />
+  </form>
+</div>
