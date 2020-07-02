@@ -24,6 +24,12 @@ ul li {
 li a{
     color: gray;
 }
+#home-text{
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Muli", sans-serif;
+  font-size: 24px;
+}
 body {
   text-align: center;
 
@@ -187,7 +193,7 @@ footer {
 #main-box h2{
   font-family: "Muli", sans-serif;
   font-size: 24px;
-  margin-top: 30px;
+  margin-top: 5px;
   font-weight: bold;
 }
 #main-box h6{
@@ -202,7 +208,7 @@ footer {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 #payment tr, #payment td {
   min-width: 110px;
@@ -258,6 +264,7 @@ input[id="menuicon"]:checked + label + div {
   body {
     background-color: rgb(255, 255, 255);
   }
+
   input[id="menuicon"]:checked + label {
     right: 30px;
   }
