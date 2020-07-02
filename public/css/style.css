@@ -41,6 +41,7 @@ main {
 #logo {
   text-align: center;
   padding: 40px;
+
 }
 #logo-name {
   font-family: "Muli", sans-serif;
@@ -48,6 +49,9 @@ main {
   font-size: 30px;
   margin-top: 20px;
   opacity: 0.8;
+}
+#logoIcon-small{
+  display: none;
 }
 #login {
   min-height: 300px;
@@ -78,7 +82,7 @@ input[id="menuicon"] + label span {
   width: 100%;
   height: 4px;
   border-radius: 30px;
-  background: rgb(255, 115, 0);
+  background: #80bdab;
   transition: all 0.35s;
 }
 input[id="menuicon"] + label span:nth-child(1) {
@@ -216,9 +220,6 @@ footer {
 @media (max-width: 1024px) {
 }
 @media (max-width: 960px) {
-  body {
-    background: white;
-  }
   #main-box {
     margin-top: 70px;
   }
@@ -226,24 +227,10 @@ footer {
     display: none;
   }
   header {
-    background-color: rgb(12, 70, 158);
-    height: 70px;
-    position: fixed;
-    width: 100%;
-    opacity: 1;
   }
   #logo {
-    text-align: left;
-  }
-  #logo-img {
-    display: block;
-    margin-top: 8px;
-    margin-left: 15px;
-    height: 45px;
-    width: 75px;
-  }
-  #logo-name {
-    display: none;
+    text-align: center;
+    opacity: 1;
   }
 }
 #sidebar-menu {
@@ -291,16 +278,34 @@ input[id="menuicon"]:checked + label + div {
     width: 100%;
   }
   .fixed-footer-text {
-    font-size: 10px;
+    font-size: 15px;
   }
   .fixed-footer ul li {
     font-family: "Muli", sans-serif;
     display: inline-block;
     text-align: center;
     color: rgb(88, 88, 88);
-    font-size: 17px;
+    font-size: 14px;
     opacity: 0.8;
-    padding: 5px 10px 5px 5px;
+    padding: 5px 25px 5px 25px;
+  }
+  #logo {
+    text-align: left;
+    padding: 0;
+  
+  }
+  #logo-name {
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: left;
+    opacity: 0.8;
+  }
+  #logoIcon-big{
+    display: none;
+  }
+  #logoIcon-small{
+    margin-top: 10px;
+    display: inline-block ;
   }
 }
 @media (max-width: 600px) {
@@ -308,30 +313,30 @@ input[id="menuicon"]:checked + label + div {
     margin-left: 15%;
     margin-right: 15%;
   }
+  
   .fixed-footer ul li {
     font-size: 15px;
-    padding: 5px 10px 5px 5px;
+    padding: 5px 20px 5px 20px;
   }
   #payment tr, #payment td {
     min-width: 80px;
   }
 }
 @media (max-width: 480px) {
+  #login {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
   
   .fixed-footer-text {
-    font-size: 13px;
+    font-size: 12px;
   }
   .fixed-footer ul li {
-    font-size: 15px;
-    padding: 5px 10px 5px 9px;
+    padding: 5px 10px 5px 10px;
   }
 }
 
 @media (max-width: 320px) {
-  .fixed-footer ul li {
-    font-size: 15px;
-    padding: 7px 10px 5px 8px;
-  }
 }
 
 /*invoice page*/
@@ -367,7 +372,6 @@ input[id="menuicon"]:checked + label + div {
 .container {
   font-family: "Muli", sans-serif;
   background-color: #f2f2f2;
-  margin-top: 80px;
   padding: 30px;
   border: 1px solid lightgrey;
   border-radius: 3px;
@@ -423,5 +427,3 @@ span.price {
     margin-bottom: 20px;
   }
 }
-
-
