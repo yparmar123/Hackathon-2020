@@ -7,11 +7,12 @@ const user = {
     city: "Toronto",
     address: "123 Cherry Street",
     country: "Canada",
-    balance: 12345,
+    balance: "689.50",
     receipts: [
     {
         receiptID: "456123",
         date: "12/04/2019",
+        total: "18.50",
         business: 
         {
             businessName: "spagettio",
@@ -43,11 +44,12 @@ const user = {
                 unitPrice: 3.50,
                 quantity: 1
             }
-        ],        
+        ]        
     },
     {
         receiptID: "321654",
-        date: "06/04/2020",
+        date: "01/05/2020",
+        total: "389.00",
         business: 
         {
             businessName: "BalkaranArts",
@@ -70,20 +72,21 @@ const user = {
                 quantity: 25
             },
             {
-                    name: "Blue paint",
-                    unitPrice: 7,
-                    quantity: 30
+                name: "Blue paint",
+                unitPrice: 7,
+                quantity: 30
             },
             {
                 name: "Sketch book",
                 unitPrice: 6,
                 quantity: 9
             }
-        ],        
+        ]        
     },
     {
         receiptID: "789456",
-        date: "01/05/2020",
+        date: "06/04/2020",
+        total: "282.00",
         business: 
         {
             businessName: "Taffy",

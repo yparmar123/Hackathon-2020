@@ -11,7 +11,8 @@ router.get("/estimates", (req, res) => {
 });
 router.get("/expenses", (req, res) => {
   res.render("accounting/expenses", {
-    mainid: "main-box"
+    mainid: "main-box",
+    data: userData
   });
 });
 
