@@ -291,6 +291,8 @@ input[id="menuicon"]:checked + label + div {
 
 @media (max-width: 320px) {
 }
+
+
 /*invoice page*/
 .row {
   display: -ms-flexbox; /* IE10 */
@@ -376,4 +378,40 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+
+
+/*payment page*/
+
+#main-box h2{
+  font-family: "Muli", sans-serif;
+  font-size: 24px;
+  margin-top: 30px
+}
+#main-box h6{
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+}
+#payment{
+  font-family: "Muli", sans-serif;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+#payment tr, #payment td {
+  min-width: 110px;
+  height: 50px;
+  font-size: 15px;
+}
+#payment thead{
+  background-color: #f2f2f2;
+}
+#payment tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#payment a{
+  color: black;
 }
