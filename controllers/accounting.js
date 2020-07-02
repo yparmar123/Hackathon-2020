@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
+const userData = require("../model/fakedb")
+
 router.get("/estimates", (req, res) => {
   res.render("accounting/estimates", {
-    mainid: "main-box"
+    mainid: "main-box",
+    data: userData
   });
 });
 router.get("/expenses", (req, res) => {
