@@ -82,7 +82,7 @@ input[id="menuicon"] + label span {
   width: 100%;
   height: 4px;
   border-radius: 30px;
-  background: #80bdab;
+  background: #41a386;
   transition: all 0.35s;
 }
 input[id="menuicon"] + label span:nth-child(1) {
@@ -116,8 +116,9 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
 }
 div[class="sidebar"] {
   width: 220px;
-  height: 442px;
+  height: 469px;
   background: whitesmoke;
+  opacity: 0.9;
   position: fixed;
   top: 60px;
   right: -250px;
@@ -128,9 +129,6 @@ div[class="sidebar"] {
 
 input[id="menuicon"]:checked + label + div {
   right: 0;
-}
-#sidebar-menu {
-  display: none;
 }
 #sidebar-setting li,
 #sidebar-account li,
@@ -147,15 +145,16 @@ input[id="menuicon"]:checked + label + div {
   color: rgb(19, 87, 165);
 }
 .sidebar ul {
+  margin: 0;
   padding-top: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid rgb(219, 218, 218);
   border-left: 1px solid rgb(219, 218, 218);
 }
 #main-box {
-  background-color: rgb(255, 255, 255);
   min-height: 400px;
   margin: 0 auto;
+  margin-top: 70px;
   margin-bottom: 80px;
   margin-left: 0;
   margin-right: 0%;
@@ -169,7 +168,7 @@ footer {
 #footer-text {
   font-family: "Muli", sans-serif;
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
   font-size: 8px;
   color: white;
   opacity: 0.7;
@@ -179,6 +178,12 @@ footer {
 }
 /*payment page*/
 
+#payment-box{
+  background-color: white;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px;
+}
 #main-box h2{
   font-family: "Muli", sans-serif;
   font-size: 24px;
@@ -220,17 +225,10 @@ footer {
 @media (max-width: 1024px) {
 }
 @media (max-width: 960px) {
-  #main-box {
-    margin-top: 70px;
-  }
   footer {
     display: none;
   }
   header {
-  }
-  #logo {
-    text-align: center;
-    opacity: 1;
   }
 }
 #sidebar-menu {
@@ -319,7 +317,8 @@ input[id="menuicon"]:checked + label + div {
     padding: 5px 20px 5px 20px;
   }
   #payment tr, #payment td {
-    min-width: 80px;
+    min-width: 90px;
+    font-size: 13px;
   }
 }
 @media (max-width: 480px) {
