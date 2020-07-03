@@ -11,6 +11,17 @@
             </thead>
             <tbody>
                 
+               {{#each data.receipts}}
+               
+               <tr>
+                    <td class="payment-date"><a href="#">{{this.date}}</a></td>
+                    <td class="payment-price"><a href="#">${{this.total}}</a></td>
+                    <td class="payment-product"><a href="#">{{this.business.businessName}}</a></td>
+                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
+                 </tr>
+               {{/each}}
+
+               <!---
                 <tr>
                     <td class="payment-date"><a href="#">07-01-2020</a></td>
                     <td class="payment-price"><a href="#">$2,000.00</a></td>
@@ -77,6 +88,63 @@
                     <td class="payment-product"><a href="#">Flower</a></td>
                     <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
                  </tr>
+                 -->
             </tbody>
+            
         </table>
+
+
+         {{#each data.receipts}}
+            <h1>Order #{{this.orderNo}}</h1>
+
+            <h2>{{this.business.businessName}}</h2>
+            <p>
+               {{this.business.address1}}<br>
+               {{this.business.address2}}<br>
+               {{this.business.businessNo}}<br>
+               {{this.business.businessEmail}}
+            </p>
+
+            <h2>{{data.firstName}} {{data.lastName}}</h2>
+            <p>
+               {{data.address1}}<br>
+               {{data.address2}}<br>
+               {{data.phone}}<br>
+               {{data.email}}  
+            </p>
+
+            <h2>Invoice Detail</h2>
+            <p>
+               Invoice ID: {{this.receiptID}}<br>
+               Purchase Date: {{this.date}}<br>
+               Order #: {{this.orderNo}}<br>
+            </p>
+
+            <table>
+               <thead>
+                  <th>Item</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+               </thead>
+               {{#each this.products}}
+                  <tr>
+                     <td>{{this.name}}</td>
+                     <td>{{this.quantity}}</td>
+                     <td>${{this.unitPrice}}</td>
+                  </tr>
+               {{/each}}
+               <tfoot>
+                  <tr>
+                     <td>Subtotal:</td>
+                     <td>{{this.subtotal}}</td>
+                  </tr>
+                  <tr>
+                     <td>Total:</td>
+                     <td>{{this.total}}</td>
+                  </tr>
+               </tfoot>
+            </table>
+
+         {{/each}}
+        
         </div>

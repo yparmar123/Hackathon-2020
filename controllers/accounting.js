@@ -23,7 +23,8 @@ router.get("/invoices", (req, res) => {
 });
 router.get("/payment", (req, res) => {
   res.render("accounting/payment", {
-    mainid: "main-box"
+    mainid: "main-box",
+    data: userData
   });
 });
 

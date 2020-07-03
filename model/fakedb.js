@@ -17,6 +17,8 @@ const user = {
             receiptID: "123456",
             orderNo: "6942",
             date: "07-01-2020",
+            subtotal: "4100.00",
+            total: "4633.00",
             business: {
             businessName: "Seneca",
             businessNo: "905-421-4423",
@@ -27,15 +29,15 @@ const user = {
             products: [
             {
             name: "Dell Inspiron 3000",
-            unitePrice: "750.00",
+            unitPrice: "750.00",
             quantity: "4"
             },{
             name: "Monitor",
-            unitePrice: "200.00",
+            unitPrice: "200.00",
             quantity: "2"
             },{
             name: "Website",
-            unitePrice: "700",
+            unitPrice: "700",
             quantity: "1"
             }]
         },
@@ -43,6 +45,8 @@ const user = {
             receiptID: "234567",
             orderNo: "9423",
             date: "07-01-2020",
+            subtotal: "2050.00",
+            total: "2316.50",
             business: {
             businessName: "Spring Spa",
             businessNo: "646-231-5663",
@@ -53,15 +57,15 @@ const user = {
             products: [
             {
             name: "Massage Table",
-            unitePrice: "500.00",
+            unitPrice: "500.00",
             quantity: "3"
             },{
             name: "Massage Oil",
-            unitePrice: "20.00",
+            unitPrice: "20.00",
             quantity: "15"
             },{
             name: "Cleaning Supplies",
-            unitePrice: "50.00",
+            unitPrice: "50.00",
             quantity: "5"
             }]
         },
@@ -69,6 +73,8 @@ const user = {
             receiptID: "345678",
             orderNo: "2376",
             date: "06-27-2020",
+            subtotal: "2700.00",
+            total: "3051.00",
             business: {
             businessName: "Daru Co.",
             businessNo: "647-129-4432",
@@ -79,7 +85,7 @@ const user = {
             products: [
             {
             name: "Receipt app",
-            unitePrice: "2700.00",
+            unitPrice: "2700.00",
             quantity: "1"
             }]
         },
@@ -87,6 +93,8 @@ const user = {
             receiptID: "456789",
             orderNo: "9201",
             date: "06-27-2020",
+            subtotal: "6500.00",
+            total: "7345.00",
             business: {
             businessName: "CPOS",
             businessNo: "416-223-4421",
@@ -97,11 +105,11 @@ const user = {
             products: [
             {
             name: "Debt Machine",
-            unitePrice: "2000.00",
+            unitPrice: "2000.00",
             quantity: "3"
             },{
             name: "CPOS Account",
-            unitePrice: "500",
+            unitPrice: "500",
             quantity: "1"
             }]
         },
@@ -109,6 +117,8 @@ const user = {
             receiptID: "567890",
             orderNo: "5021",
             date: "06-14-2020",
+            subtotal: "7540.00",
+            total: "8520.20",
             business: {
             businessName: "Google",
             businessNo: "905-113-5523",
@@ -119,11 +129,11 @@ const user = {
             products: [
             {
             name: "Cloud Service",
-            unitePrice: "2540.00",
+            unitPrice: "2540.00",
             quantity: "1"
             },{
             name: "Google Networking Solutions",
-            unitePrice: "5000.00",
+            unitPrice: "5000.00",
             quantity: "1"
             }]
         }
