@@ -182,14 +182,23 @@ footer {
 .fixed-footer {
   display: none;
 }
-/*payment page*/
+/*payment, setting, home page*/
 
 #payment-box{
   background-color: white;
   margin: 0 auto;
   padding: 30px;
 }
-#main-box h2{
+#setting-box{
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px 10px 20px 10px;
+}
+#setting-contents{
+ margin-top: 30px;
+}
+
+#main-box h2, #setting-box h2{
   font-family: "Muli", sans-serif;
   font-size: 24px;
   margin-top: 5px;
@@ -223,8 +232,21 @@ footer {
 #payment a{
   color: black;
 }
-
-
+.setting{
+  background-color: whitesmoke;
+  margin: 10px;
+  min-width: 300px;
+  font-size: 17px;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+.setting:hover{
+  background-color: rgb(121, 210, 201);
+}
+#setting-contents a{
+  color: black;
+  text-decoration: none;
+}
 @media (max-width: 1280px) {
 }
 @media (max-width: 1024px) {
@@ -326,7 +348,7 @@ input[id="menuicon"]:checked + label + div {
     min-width: 80px;
     font-size: 12px;
   }
-  #payment-box{
+  #payment-box, #setting-box{
     padding-left: 10px;
     padding-right: 10px;
   }
