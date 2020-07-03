@@ -1,123 +1,133 @@
 const user = {      
-    firstName: "Saeed",
-    lastName: "Salar",
+    firstName: "John",
+    lastName: "Doe",
     id: "123456789",
-    email: "ss@gmail.com",
-    phone: "1111111111",
-    city: "Toronto",
+    email: "jd@gmail.com",
+    phone: "416-224-6231",
     address: "123 Cherry Street",
-    country: "Canada",
-    balance: "689.50",
+    Address2: "Toronto, ON",
     payment: 
         {
             method: "Visa",
-            cardHolderName: "Saeed Salar",
+            cardHolderName: "John Doe",
             cardNo: 3456,
         },
     receipts: [
-    {
-        receiptID: "456123",
-        date: "12/04/2019",
-        total: "18.50",
-        business: 
         {
-            businessName: "spagettio",
-            businessNo: "9054224999",
-            address: "11 fake street",
-            businessEmail: "someone@gmail.com"
-        },       
-        products: [
-            {
-                name: "tomato",
-                unitPrice: 1,
-                quantity: 3
+            receiptID: "123456",
+            orderNo: "6942",
+            date: "07-01-2020",
+            business: {
+            businessName: "Seneca",
+            businessNo: "905-421-4423",
+            address1: "1750 Finch Ave E",
+            address2: "North York, ON",
+            businessEmail: "info@senecacollege.ca",
             },
+            products: [
             {
-                name: "spagetti",
-                unitPrice: 3,
-                quantity: 4
-            },
-            {
-                name: "Razi's secret sauce",
-                unitPrice: 3.50,
-                quantity: 1
-            }
-        ]        
-    },
-    {
-        receiptID: "321654",
-        date: "01/05/2020",
-        total: "389.00",
-        business: 
-        {
-            businessName: "BalkaranArts",
-            businessNo: "9053242123",
-            address: "15 bird street",
-            businessEmail: "artsb@gmail.com"
-        },       
-        payment: 
-        {
-            method: "Visa",
-            cardHolderName: "Balkaran Bird",
-            cardNo: 1834967691123456,
-            expirationDate: 05/24,
-            ccv: "321"
+            name: "Dell Inspiron 3000",
+            unitePrice: "750.00",
+            quantity: "4"
+            },{
+            name: "Monitor",
+            unitePrice: "200.00",
+            quantity: "2"
+            },{
+            name: "Website",
+            unitePrice: "700",
+            quantity: "1"
+            }]
         },
-        products: [
             {
-                name: "Paint brush",
-                unitPrice: 5,
-                quantity: 25
+            receiptID: "234567",
+            orderNo: "9423",
+            date: "07-01-2020",
+            business: {
+            businessName: "Spring Spa",
+            businessNo: "646-231-5663",
+            address1: "760 Fake Street",
+            address2: "Markham, ON",
+            businessEmail: "info@springspa@.ca",
             },
+            products: [
             {
-                name: "Blue paint",
-                unitPrice: 7,
-                quantity: 30
-            },
-            {
-                name: "Sketch book",
-                unitPrice: 6,
-                quantity: 9
-            }
-        ]        
-    },
-    {
-        receiptID: "789456",
-        date: "06/04/2020",
-        total: "282.00",
-        business: 
-        {
-            businessName: "Taffy",
-            businessNo: "4566549875",
-            address: "256 random street",
-            businessEmail: "taffy@hotmail.com"
-        },       
-        payment: 
-        {
-            method: "Mastercard",
-            cardHolderName: "Jan Little",
-            cardNo: 7434967691128856,
-            expirationDate: 09/25,
-            ccv: "651"
+            name: "Massage Table",
+            unitePrice: "500.00",
+            quantity: "3"
+            },{
+            name: "Massage Oil",
+            unitePrice: "20.00",
+            quantity: "15"
+            },{
+            name: "Cleaning Supplies",
+            unitePrice: "50.00",
+            quantity: "5"
+            }]
         },
-        products: [
             {
-                name: "Spider-Man Issue 89",
-                unitPrice: 25,
-                quantity: 2
+            receiptID: "345678",
+            orderNo: "2376",
+            date: "06-27-2020",
+            business: {
+            businessName: "Daru Co.",
+            businessNo: "647-129-4432",
+            address1: "670 Real Street",
+            address2: "Etobicoke, ON",
+            businessEmail: "info@daru.ca",
             },
+            products: [
             {
-                name: "Batman Issue 7",
-                unitPrice: 20,
-                quantity: 6
+            name: "Receipt app",
+            unitePrice: "2700.00",
+            quantity: "1"
+            }]
+        },
+            {
+            receiptID: "456789",
+            orderNo: "9201",
+            date: "06-27-2020",
+            business: {
+            businessName: "CPOS",
+            businessNo: "416-223-4421",
+            address1: "570 CPO Road",
+            address2: "Toronto, ON",
+            businessEmail: "info@CPOS.ca",
             },
+            products: [
             {
-                name: "Aquaman Issue 9",
-                unitPrice: 14,
-                quantity: 8
-            }
-        ]
-    }]
+            name: "Debt Machine",
+            unitePrice: "2000.00",
+            quantity: "3"
+            },{
+            name: "CPOS Account",
+            unitePrice: "500",
+            quantity: "1"
+            }]
+        },
+            {
+            receiptID: "567890",
+            orderNo: "5021",
+            date: "06-14-2020",
+            business: {
+            businessName: "Google",
+            businessNo: "905-113-5523",
+            address1: "763 Google Road",
+            address2: "Toronto, ON",
+            businessEmail: "service@gmail.com",
+            },
+            products: [
+            {
+            name: "Cloud Service",
+            unitePrice: "2540.00",
+            quantity: "1"
+            },{
+            name: "Google Networking Solutions",
+            unitePrice: "5000.00",
+            quantity: "1"
+            }]
+        }
+    ]
 }
 
 module.exports = user;
