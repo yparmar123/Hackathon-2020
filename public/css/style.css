@@ -198,7 +198,6 @@ footer {
 #setting-contents{
  margin-top: 30px;
 }
-
 #main-box h2, #setting-box h2{
   font-family: "Muli", sans-serif;
   font-size: 24px;
@@ -211,6 +210,14 @@ footer {
   margin: 0;
   font-weight: lighter;
   color: rgb(78, 78, 78);
+}
+#main-welcome{
+  font-family: "Muli", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  
 }
 #payment{
   font-family: "Muli", sans-serif;
