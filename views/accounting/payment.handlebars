@@ -1,150 +1,107 @@
-<div id="payment-box"><h2>Payment</h2>
-        <h6>Click the payment to check the details.</h6>
-        <table id="payment">
-            <thead>
-                <tr>
-                    <th class="payment-date">Date</th>
-                    <th class="payment-price">Price</th>
-                    <th class="payment-product">Product</th>
-                    <th class="payment-status">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-               {{#each data.receipts}}
-               
-               <tr>
-                    <td class="payment-date"><a href="#">{{this.date}}</a></td>
-                    <td class="payment-price"><a href="#">${{this.total}}</a></td>
-                    <td class="payment-product"><a href="#">{{this.business.businessName}}</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-               {{/each}}
-
-               <!---
-                <tr>
-                    <td class="payment-date"><a href="#">07-01-2020</a></td>
-                    <td class="payment-price"><a href="#">$2,000.00</a></td>
-                    <td class="payment-product"><a href="#">Seneca</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 <tr>
-                    <td class="payment-date"><a href="#">07-01-2020</a></td>
-                    <td class="payment-price"><a href="#">$1,120.00</a></td>
-                    <td class="payment-product"><a href="#">Spring Spa</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 <tr>
-                    <td class="payment-date"><a href="#">06-28-2020</a></td>
-                    <td class="payment-price"><a href="#">$2,800.00</a></td>
-                    <td class="payment-product"><a href="#">Daru Co.</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 <tr>
-                    <td class="payment-date"><a href="#">06-27-2020</a></td>
-                    <td class="payment-price"><a href="#">$560.00</a></td>
-                    <td class="payment-product"><a href="#">Cpos</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 <tr>
-                    <td class="payment-date"><a href="#">06-14-2020</a></td>
-                    <td class="payment-price"><a href="#">$1,100.00</a></td>
-                    <td class="payment-product"><a href="#">Kgb</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 <tr>
-                    <td class="payment-date"><a href="#">06-10-2020</a></td>
-                    <td class="payment-price"><a href="#">$3,500.00</a></td>
-                    <td class="payment-product"><a href="#">Good people</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 <tr>
-                    <td class="payment-date"><a href="#">06-10-2020</a></td>
-                    <td class="payment-price"><a href="#">$200.00</a></td>
-                    <td class="payment-product"><a href="#">Monthly</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 <tr>
-                    <td class="payment-date"><a href="#">06-08-2020</a></td>
-                    <td class="payment-price"><a href="#">$1,450.00</a></td>
-                    <td class="payment-product"><a href="#">N5 company</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 <tr>
-                    <td class="payment-date"><a href="#">06-01-2020</a></td>
-                    <td class="payment-price"><a href="#">$2,000.00</a></td>
-                    <td class="payment-product"><a href="#">Google</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 <tr>
-                    <td class="payment-date"><a href="#">05-31-2020</a></td>
-                    <td class="payment-price"><a href="#">$3,500.00</a></td>
-                    <td class="payment-product"><a href="#">Gray Co.</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 <tr>
-                    <td class="payment-date"><a href="#">05-29-2020</a></td>
-                    <td class="payment-price"><a href="#">$100.00</a></td>
-                    <td class="payment-product"><a href="#">Flower</a></td>
-                    <td class="payment-status"><a href="#"><i class="far fa-check-circle" style="color:rgb(23, 171, 33);"></i></a></td>               
-                 </tr>
-                 -->
-            </tbody>
-            
-        </table>
-
+<div id="payment-box">
+   <h3>Payment</h3>
+   <table id="payment">
+      <thead>
+         <tr>
+            <th class="thc payment-date">Date</th>
+            <th class="thc payment-price">Price</th>
+            <th class="thc payment-product">Product</th>
+            <th class="thc payment-status">Status</th>
+         </tr>
+      </thead>
+      <tbody>
 
          {{#each data.receipts}}
-            <h1>Order #{{this.orderNo}}</h1>
 
-            <h2>{{this.business.businessName}}</h2>
+         <tr>
+            <td class="payment-date"><a href="#">{{this.date}}</a></td>
+            <td class="payment-price"><a href="#">${{this.total}}</a></td>
+            <td class="payment-product"><a href="#">{{this.business.businessName}}</a></td>
+            <td class="payment-status"><a href="#"><i class="far fa-check-circle"
+                     style="color:rgb(23, 171, 33);"></i></a></td>
+         </tr>
+         {{/each}}
+      </tbody>
+
+   </table>
+
+   <div class="btn btn-outline-primary" onclick="return document.querySelector('#onclick').style.display='block';">
+      Click the payment to check the details.</div>
+
+   <div id="onclick" style="display: none; text-align:initial">
+      {{#each data.receipts}}
+      <div class="row">
+
+         <h5 class="col" style="text-align: center;"><strong>Order #{{this.orderNo}}</strong></h5>
+      </div>
+      <div class="row">
+         <div class="col-sm">
+            
             <p>
+               {{this.business.businessName}}<br>
                {{this.business.address1}}<br>
                {{this.business.address2}}<br>
                {{this.business.businessNo}}<br>
                {{this.business.businessEmail}}
             </p>
-
-            <h2>{{data.firstName}} {{data.lastName}}</h2>
+         </div>
+         <div class="col-sm">
+         
             <p>
-               {{data.address1}}<br>
-               {{data.address2}}<br>
-               {{data.phone}}<br>
-               {{data.email}}  
+               John Doe<br>
+               123 Cherry Street<br>
+               Toronto, ON<br>
+               416-224-6231<br>
+               jd@gmail.com
             </p>
+         </div>
 
-            <h2>Invoice Detail</h2>
+         <div class="col-sm">
+            
             <p>
+               Invoice Detail<br>
                Invoice ID: {{this.receiptID}}<br>
                Purchase Date: {{this.date}}<br>
                Order #: {{this.orderNo}}<br>
             </p>
-
-            <table>
-               <thead>
+         </div>
+      </div>
+      <hr>
+      <div class="row">
+         <div class="col">
+            <table style="width:470px">
+               <thead style="font-size: 17px;">
                   <th>Item</th>
                   <th>Quantity</th>
                   <th>Price</th>
                </thead>
                {{#each this.products}}
-                  <tr>
-                     <td>{{this.name}}</td>
-                     <td>{{this.quantity}}</td>
-                     <td>${{this.unitPrice}}</td>
-                  </tr>
+               <tr>
+                  <td>{{this.name}}</td>
+                  <td>{{this.quantity}}</td>
+                  <td>${{this.unitPrice}}</td>
+               </tr>
                {{/each}}
+
                <tfoot>
                   <tr>
+                     <td></td>
                      <td>Subtotal:</td>
                      <td>{{this.subtotal}}</td>
                   </tr>
                   <tr>
+                     <td></td>
                      <td>Total:</td>
                      <td>{{this.total}}</td>
                   </tr>
                </tfoot>
             </table>
+         </div>
+      </div>
+      <hr><hr>
+      {{/each}}
+   </div>
 
-         {{/each}}
-        
-        </div>
+
+
+</div>
