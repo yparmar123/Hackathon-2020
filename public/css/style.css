@@ -190,9 +190,10 @@ footer {
   padding: 30px;
 }
 #setting-box{
-  background-color: white;
+  background-color: rgb(252, 252, 252);
   margin: 0 auto;
   padding: 20px 10px 20px 10px;
+  font-family: "Muli", sans-serif;
 }
 #setting-contents{
  margin-top: 30px;
@@ -239,6 +240,8 @@ footer {
   font-size: 17px;
   padding-top:10px;
   padding-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px gainsboro;
 }
 .setting:hover{
   background-color: rgb(121, 210, 201);
